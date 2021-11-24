@@ -1,0 +1,126 @@
+/*
+
+these are just some widgets and settings stripped down from Malua Framework.
+Theres no need to include the whole framework and its features here since I was going only use a few things out of it.)
+
+*/
+
+/* Defaults */
+* {
+  margin: 0;
+  padding: 0;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+}
+
+.m-card {
+  padding-top: 20px;
+
+  background: rgba(246, 246, 246, 0.3);
+  box-shadow: 1px 1px 30px 0 rgba(64, 78, 237, 0.2);
+
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.m-logo {
+  position: relative;
+
+  left: 50%;
+  margin-left:-20px;
+
+  background-color: rgb(44, 47, 51);
+
+  box-shadow: 0 10px 20px var(64, 78, 237, 0.2), 0 1px 8px var(64, 78, 237, 0.3);
+
+  width: 30px;
+  height: 30px;
+  
+  border-radius: 50%;
+
+  transition: transform .3s ease;
+}
+
+.m-logo:hover {
+  transform: scale(1.10);
+  cursor: pointer;
+}
+
+
+/*
+*/
+
+.m-checkbox-box {
+  position: relative;
+  display: block;
+
+  left: 50%;
+  top: 5px;
+
+  margin-left:-85px;
+
+  width: 150px;
+  height: 25px;
+
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 8px;
+
+  background: rgba(245, 245, 245, 0.7);
+  box-shadow: 1px 1px 1px rgba(64, 78, 237, 0.2), 0 1px 8px rgba(64, 78, 237, 0.3);
+  
+  border-radius: 4px;
+  outline: none;
+}
+
+.m-checkbox {
+  width: 14px;
+  height: 14px;
+
+  border-radius: 2px;
+  
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .1), 0 1px 8px rgba(0, 0, 0, .2);
+
+  outline: none;
+  transition: ease-out 0.3s;
+  
+  vertical-align: middle;
+}
+
+.m-checkbox:hover {
+
+  background: rgba(44, 47, 51, 0.5);
+  transition: ease-in 0.2s;
+  cursor: pointer;
+}
+
+.m-checkbox:checked {
+
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  background: rgba(44, 47, 51, 0.8);
+  transition: ease-out 0.2s;
+}
+
+.m-checkbox:checked:hover {
+
+  background: rgba(44, 47, 51, 1.0);
+  transition: ease-in 0.2s;
+}
+
+.m-checkbox-label {
+  color: rgb(35, 39, 42);
+
+  padding-left: 2px;
+
+  vertical-align: middle;
+}
