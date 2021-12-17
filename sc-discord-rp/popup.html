@@ -3,62 +3,53 @@
 
 <head>
 
-  <style>
-    .custom-bg {
-      background-image: linear-gradient(to bottom right, rgb(35 39 42), rgb(44, 47, 51));
-      
-      padding-left: 30px;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-right: 30px;
+  <!-- google fonts -->
+  <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css2?family=Material+Icons+Outlined' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap' rel='stylesheet'>
 
-      font-family: 'Inter', sans-serif;
-      color: rgb(35, 39, 42);
-    }
+  <!-- chros style -->
+  <link href='popup.css' rel='stylesheet' />
 
-    * {
-      margin: 0;
-      padding: 0;
-
-      -webkit-appearance: none;
-      appearance: none;
-
-      -webkit-user-select: none;
-      user-select: none;
-
-      -webkit-user-drag: none;
-    }
-
-    .blur-glass {
-      backdrop-filter: blur(25px);
-      background-blend-mode: exclusion;
-      background: var(--color-background1);
-      background-image: url(data:image/png;base64,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);
-    }
-
-    p {
-      padding: 5px;
-      font-size: 14px;
-      text-align: center;
-    }
-
-  </style>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel='stylesheet' href='popup.css' />
-
+  <!-- script -->
   <script src='popup.js' defer></script>
 
 </head>
 
-<body class='custom-bg'>
+<body class='chros-bg'>
 
-  <div style='width: 300px; height: 200px' class='m-card blur-glass'>
-    
-    <img title='reload extension' id='reloadButton' src='assets/icon.png' class='m-logo'>
+  <div style='width: 360px; height: 100px;' id='mainCard' class='chros-card chros-blur'>
 
-    <p>Make sure that you have an active Discord tab opened and a song playing on SoundCloud.</p>
-    <p>The extension will do the rest.</p>
+    <a target='_blank' href='https://github.com/otvv/sc-discord-rp'>
+      <img src='assets/icon.png' class='chros-logo'>
+    </a>
+
+    <button style='width: 60px; height: 30px; margin-left: 70px' title='close window' id='closeButton'
+      class='chros-button-text chros-button'>
+      Exit
+    </button>
+
+    <button style='width: 30px; height: 30px; margin-left: 145px' title='reload extension' id='reloadButton'
+      class='chros-button'>
+      <span style='position: fixed; left: 150px; top: 25px;' class='material-icons'>refresh</span>
+    </button>
+
+    <input type='checkbox' style='width: 30px; height: 30px; margin-left: 190px'
+      title='show more info on how the extension works' id='infoButton' class='chros-button'>
+    <span style='position: fixed; left: 195px; top: 25px;' id='infoButtonIcon'
+      class='material-icons-outlined'>info</span>
+    </input>
+
+    <span style='top: 20px; left: 88%;' class='chros-caret'>
+      <span style='font-size: 23px; margin-top: 3px; margin-left: 3px;' title='show more' id='caretSwitch'
+        class='material-icons'>
+        expand_less
+      </span>
+    </span>
+
+    <p style='display: none;' id='hiddenText' class='chros-text'>
+      Make sure that you have an active Discord tab opened and a song playing on SoundCloud.
+    </p>
 
   </div>
 

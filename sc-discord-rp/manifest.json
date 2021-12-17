@@ -1,7 +1,7 @@
 {
   "name": "SoundCloud Rich Presence",
   "description": "SoundCloud Rich Presence for Discord Web",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 2,
   "author": "otvv",
   "minimum_chrome_version": "89",
