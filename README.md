@@ -14,6 +14,7 @@ A simple Chrome extension that aims to provide Rich Presence for SoundCloud on t
 <summary>todo list:</summary>
 
 -   ~~better extension UI~~ _(something closer to ChromeOS design)_ :white_check_mark:
+-   implement redux
 -   faster song progress display _(timer)_
 -   stealth mode _(when enabled the extension will not display the current song/author being played)_
 -   cover art _(maybe)_
